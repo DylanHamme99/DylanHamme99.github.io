@@ -5,7 +5,7 @@
 ### Category Name 1 
 
 [An Analysis of the Landscape ecology of Jonses Family Farms](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<images/Jones_Farm_Landscape_Final_image.jpg?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
