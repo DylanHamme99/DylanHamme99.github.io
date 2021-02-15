@@ -4,7 +4,7 @@
 
 
 [An Analysis of the Landscape ecology of Jonses Family Farms](/sample_page)
-<images/Jones_Farm_Landscape_Final_image.jpg>
+[<img src="images/Jones_Farm?raw=true"/>](/project_probation/index)
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
