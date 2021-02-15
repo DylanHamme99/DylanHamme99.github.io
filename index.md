@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/sample_page)
+[An Analysis of the Landscape ecology of Jonses Family Farms](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
