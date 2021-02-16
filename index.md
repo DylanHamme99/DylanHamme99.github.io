@@ -3,17 +3,17 @@
 ---
 
 
-[An Analysis of the Landscape ecology of Jonses Family Farms](/Landscape.md/)
+[An Analysis of the Landscape Ecology of Jones Family Farms](/Landscape.md/)
 <br>
 <br>
 [<img src="images/Jones_Farm_Landscape_Final_image.jpg?raw=true"/>](/Landscape.md/)
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Future Project 1](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
+[Future Project 2](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
