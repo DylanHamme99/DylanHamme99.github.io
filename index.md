@@ -3,7 +3,7 @@
 ---
 
 
-<strong><bold> [An Analysis of the Landscape ecology of Jonses Family Farms](/Landscape.md)
+[An Analysis of the Landscape ecology of Jonses Family Farms](/Landscape.md)
 <br>
 <br>
 [<img src="images/Jones_Farm_Landscape_Final_image.jpg?raw=true"/>](/Landscape.md)
