@@ -9,4 +9,4 @@ boundaries of Jones Family Farms located in Shelton, Connecticut.
 ***Tools Used:***
 Google Maps, ARCPro
 <img src="images/Jones_Farm_Ad.jpg">
-<a href="https://www.jonesfamilyfarms.com/">img src="images/Jones_Farm_Ad.jpg"</a>
+<a href="https://www.jonesfamilyfarms.com/"><img src="images/Jones_Farm_Ad.jpg"></a>
