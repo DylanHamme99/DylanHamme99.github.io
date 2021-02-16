@@ -4,4 +4,4 @@
 This is a breif report that focuses on the ecological factors and their influeces from a landscape perspective within the 
 boundaries of Jones Family Farms located in Shelton, Connecticut.
 
-<a href="/pdf/
+<a href="pdf/Landscape Report.pdf">test</a>.</p>
