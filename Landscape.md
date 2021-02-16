@@ -1,5 +1,4 @@
-## An Analysis of the Environmental Impacts and Occurrences of Jones Family Farms:
-A landscape Perspective
+## An Analysis of the Environmental Impacts and Occurrences of Jones Family Farms: A landscape Perspective
 
 ***Description***
 This is a breif report that focuses on the ecological factors and their influeces from a landscape perspective within the 
