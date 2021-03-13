@@ -3,3 +3,4 @@
 # Estimations for power consumption: https://www.electricitylocal.com/states/connecticut/ , 
 # Estimations for power supply: https://www.eia.gov/state/analysis.php?sid=CT , 
 # Locations of powerplants: https://www.eia.gov/state/?sid=CT , 
+# Nuclear Regulations: https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1555/toc/ch4/index.html ,
