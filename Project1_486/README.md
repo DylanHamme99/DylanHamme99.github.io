@@ -2,3 +2,4 @@
 # County/town shapefiles: https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/
 # Estimations for power consumption: https://www.electricitylocal.com/states/connecticut/ , 
 # Estimations for power supply: https://www.eia.gov/state/analysis.php?sid=CT , 
+# Locations of powerplants: https://www.eia.gov/state/?sid=CT , 
