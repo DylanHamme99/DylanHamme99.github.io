@@ -19,4 +19,7 @@ There is no clear data based on research that looks at how far reaching the pote
 <br>
 <br>
 <br>
-**
+**What About the Nuclear Plant?**
+The Dominion Nuclear Powerplant is the only nuclear powerplant in Connecticut, but is responsible for more than half of the state's total energy production. Nuclear powerplants do not release toxins into the atmoshpere like the previous powerplants, instead they endanger the surrounding area through the threat of a core melt accident, or a nuclear meltdown. In the case of this occurring, the 
+<br>
+<img src="images/Nuclear_Radius.png">
