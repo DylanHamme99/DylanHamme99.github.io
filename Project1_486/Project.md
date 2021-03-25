@@ -8,7 +8,7 @@ The dangers of different kinds of powerplants has been of topic of research for 
 **Overview:**
 This is purely a display of the data that will be used to make an analysis: powerplant types and locations and median household incomes of each available blockgroup in Connecticut. The statewide median household income is provided for comparison to future data.
 <br>
-<img src="images/Overview.jpg">
+<img src="images/Overview.png">
 <br>
 <br>
 <br>
