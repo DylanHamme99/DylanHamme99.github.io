@@ -9,7 +9,7 @@
 [<img src="images/Jones_Farm_Landscape_Final_image.jpg?raw=true"/>](/Landscape.md/)
 
 ---
-[Future Project 1](/pdf/sample_presentation.pdf)
+[What Are the Dangers Of Powerplants and Whom Do They Affect?](/Project1_486/Project.md/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
