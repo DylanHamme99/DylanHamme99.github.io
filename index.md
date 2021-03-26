@@ -10,7 +10,7 @@
 
 ---
 [What Are the Dangers Of Powerplants and Whom Do They Affect?](/Project1_486/Project.md/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[<img src="images/Overview.jpg?raw=true"/>](/Project1_486/Project.md/)
 
 ---
 [Future Project 2](http://example.com/)
