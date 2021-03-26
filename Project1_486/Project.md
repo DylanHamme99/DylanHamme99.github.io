@@ -40,8 +40,13 @@ The prominance of the placement of petroluem and naturalgas powerplants in below
 <br>
 <br>
 *Sources:*
-County/town shapefiles: https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/
+<br>
+County/town shapefiles: https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/ ,
+<br>
 Estimations for power consumption: https://www.electricitylocal.com/states/connecticut/ ,
+<br>
 Estimations for power supply: https://www.eia.gov/state/analysis.php?sid=CT ,
+<br>
 Locations of powerplants: https://www.eia.gov/state/?sid=CT ,
+<br>
 Nuclear Regulations: https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1555/toc/ch4/index.html ,
