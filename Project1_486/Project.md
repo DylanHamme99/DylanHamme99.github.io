@@ -6,7 +6,7 @@ The dangers of different kinds of powerplants has been of topic of research for 
 <br>
 <br>
 **Overview:**
-This is purely a display of the data that will be used to make an analysis: powerplant types and locations and median household incomes of each available blockgroup in Connecticut. The statewide median household income is provided for comparison to future data.
+This is purely a display of the data that will be used to make an analysis: powerplant types and locations and median household incomes of each available blockgroup in Connecticut, data is collected from the American Community Survey from 2019. The statewide median household income is provided for comparison to future data.
 <br>
 <img src="images/Overview.jpg">
 <br>
@@ -34,3 +34,4 @@ In the case of the smallest core melt accident, the blockgroups within the ten m
 <br>
 <br>
 ***Analysis:***
+The prominance of the placement of petroluem and naturalgas powerplants in below average income blockgroups is very apparant with the median household income of affected blockgroups being nearly $20,000 below the statewide median household income. Nearly all of the gas-fueled plants are located within cities and are 
