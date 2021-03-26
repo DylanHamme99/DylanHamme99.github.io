@@ -34,4 +34,8 @@ In the case of the smallest core melt accident, the blockgroups within the ten m
 <br>
 <br>
 ***Analysis:***
-The prominance of the placement of petroluem and naturalgas powerplants in below average income blockgroups is very apparant with the median household income of affected blockgroups being nearly $20,000 below the statewide median household income. Nearly all of the gas-fueled plants are located within cities and are 
+The prominance of the placement of petroluem and naturalgas powerplants in below average income blockgroups is very apparant with the median household income of affected blockgroups being nearly $20,000 below the statewide median household income. Nearly all of the gas-fueled plants are located within cities and have an affect on some of the lowest income areas in the state. A factor that is overlooked in this analysis is the density of powerplants within some of the affected areas. Notably, Bridgeport has areas that are affected by three or four separate powerplants, all of which are releasing contaminants. The placement of the single nuclear powerplant is much less biased, with the affected area having a slightly higher median household income than the statewide median. The entire area of affect is largely alarming as a severe core meltdown accident may bring dangerous conditions to nearly half the area of the state.
+<br>
+<br>
+<br>
+*Sources:*
