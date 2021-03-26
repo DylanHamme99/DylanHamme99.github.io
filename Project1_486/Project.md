@@ -1,5 +1,5 @@
 # What Are the Dangers of Powerplants and Whom Do They Affect?
-## *Dylan Hamme, 2020*
+## *Dylan Hamme, 2021*
 
 ***Introduction:*** 
 The dangers of different kinds of powerplants has been of topic of research for a few decades. It is known that some release contaminants into the atmosphere through the burning of fuels like petroleum and natural gas, and research has also shown patterns that these are routinely placed in areas of poverty. This is  tested using public survey data compared to the locations of different types of powerplants across Connecticut. 
@@ -40,3 +40,8 @@ The prominance of the placement of petroluem and naturalgas powerplants in below
 <br>
 <br>
 *Sources:*
+County/town shapefiles: https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/
+Estimations for power consumption: https://www.electricitylocal.com/states/connecticut/ ,
+Estimations for power supply: https://www.eia.gov/state/analysis.php?sid=CT ,
+Locations of powerplants: https://www.eia.gov/state/?sid=CT ,
+Nuclear Regulations: https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1555/toc/ch4/index.html ,
