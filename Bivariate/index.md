@@ -27,4 +27,10 @@ To quickly explain these steps:
 * The necessary libraries are called
 * Settings are set for "tidycensus" and api key is provided
 * Ideas are listed, and data is downloaded after deciding on analysis
-* 
+* Data is transformed into WGS 84
+* Variables are turned into percentages of total to make data more easily assesed
+* The two different data sets are combined, and the difference in variables across time is calculated
+* Data is written into the correct format
+<br>
+
+
