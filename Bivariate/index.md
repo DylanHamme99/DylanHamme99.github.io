@@ -3,6 +3,6 @@
 <br>
 <br>
 
-**Overview:
+**Overview:**
 <br>
-
+Working with census dats is one of the most common and useful practices in GIS. 
