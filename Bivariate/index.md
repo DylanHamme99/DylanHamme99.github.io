@@ -41,4 +41,8 @@ The data could then directly be put into a spatial form using QGIS and an analys
 
 **Overview:**
 
-Next, using the same census data, I created an analysis of the change in the percent of Black and Asian populations across the country. This required the creation of a bivariate map, that is, a map that shows the 
+Next, using the same census data, I created an analysis of the change in the percent of Black and Asian populations across the country. This required the creation of a bivariate map, that is, a map that shows two varibales within the same shapefile. In this case, the two variables are the change in percent Black population and Percent Asian population and the shapefile is the counties of the U.S.
+
+**Result:**
+
+<a href="Content/Bivariate.jpg"><img src="Content/Bivariate.jpg"><a/>
