@@ -1,0 +1,80 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+#Get libraries
+library(tidyverse)
+library(tidycensus)
+library(sf)
+library(ggplot2)
+```
+```{r}
+#settings for tidycensus
+options(tigris_class = "sf")
+options(tigris_use_cahce = TRUE)
+census_api_key("c5a0708efbdc3af4af5d2a3cb2a71dfb3f3c8c03", install = TRUE)
+
+
+```
+```{r census data}
+#Ideas for data:
+#School enrollment vs poverty rate, School enrollment vs median income, Health insurance coverage vs. something, internet subscribers per household vs.  
+
+#Getting acs data:
+Census_data_2019 <- get_acs(geography = "county",
+                            variables = c("pop" = "B02001_001", #Total population
+                                          "pop_black" = "B02001_003",
+                                          "pop_asian" = "B02001_005",
+                                          "pop_white" = "B02001_002"
+                                          ),
+                            year = 2019,
+                            state = c(NULL),
+                            county = c(NULL),
+                            survey = "acs5",
+                            geometry = TRUE, #to download
+                            output = "wide")
+
+Census_data_2014 <- get_acs(geography = "county",
+                            variables = c("pop" = "B02001_001", #Total population
+                                          "pop_black" = "B02001_003",
+                                          "pop_asian" = "B02001_005",
+                                          "pop_white" = "B02001_002"
+                                          ),
+                            year = 2014,
+                            survey = "acs5",
+                            geometry = TRUE, #to download
+                            output = "wide")
+```
+
+```{r transformation}
+#Need to transform to 3857
+st_write(st_transform(Census_data_2019, 3857), "Census_data_2019.geojson")
+st_write(st_transform(Census_data_2014, 3857), "Census_data_2014.geojson")
+```
+```{r variables}
+##Turn variables into percentages
+#Taking each amount of population by race and divide by total, multiply by 100
+Census_data_2019$percent_black <- ((Census_data_2019$pop_blackE/Census_data_2019$popE)*100)
+Census_data_2019$percent_asian <- ((Census_data_2019$pop_asianE/Census_data_2019$popE)*100)
+Census_data_2019$percent_white <- ((Census_data_2019$pop_whiteE/Census_data_2019$popE)*100)
+
+Census_data_2014$percent_black <- ((Census_data_2014$pop_blackE/Census_data_2014$popE)*100)
+Census_data_2014$percent_asian <- ((Census_data_2014$pop_asianE/Census_data_2014$popE)*100)
+Census_data_2014$percent_white <- ((Census_data_2014$pop_whiteE/Census_data_2014$popE)*100)
+```
+
+```{r Merge}
+#Merge Tables to create a single difference over time map
+Census_data_complete <- st_join(Census_data_2019, Census_data_2014, by = "Geoid", suffix = c(".19",".14"))
+Census_data_complete$pb_diff <- Census_data_complete$percent_black.19 - Census_data_complete$percent_black.14
+Census_data_complete$pa_diff <- Census_data_complete$percent_asian.19 - Census_data_complete$percent_asian.14
+Census_data_complete$pw_diff <- Census_data_complete$percent_white.19 - Census_data_complete$percent_white.14
+
+st_write(st_transform(Census_data_complete, 3857), "Census_data_complete.geojson")
+```
+
+```{r}
+
+```
+
