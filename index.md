@@ -13,8 +13,8 @@
 [<img src="images/Overview.jpg?raw=true"/>](/Project1_486/Project.md/)
 
 ---
-[Using Census Data to Create an analysis of Population Change Over Time](/Bivariate/index.md)
-<img src="images/change_over_time.jpg?raw=true"/>(/Bivariate/index.md)
+[Using Census Data to Create an analysis of Population Change Over Time](/Bivariate/index.md/)
+<img src="images/change_over_time.jpg?raw=true"/>(/Bivariate/index.md/)
 
 ---
 
