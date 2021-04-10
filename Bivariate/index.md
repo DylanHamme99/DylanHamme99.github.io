@@ -19,4 +19,6 @@ Working with census dats is one of the most common and useful practices in GIS. 
 
 <br>
 
-The first step to working with census data is downloading it. This was completed using R using tidycensus 
+The first step to working with census data is downloading it. This was completed using R using tidyverse and tidycensus. The .Rmd is provided below
+
+<a href="Content/Lab_6_Census_R.Rmd"><img src="Content/Lab_6_Census_R.Rmd"><a/>
