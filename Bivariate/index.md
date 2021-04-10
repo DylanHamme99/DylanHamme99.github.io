@@ -34,7 +34,10 @@ The data could then directly be put into a spatial form using QGIS and an analys
 <a href="Content/change_over_time.jpg"><img src="Content/change_over_time.jpg"><a/>
 <br>
 <br>
-<br>
   
 ## Part 2:
 
+<br>
+
+**Overview**
+Next, using the same census data, I created an analysis of the change in the percent of Black and Asian populations across the country. This required the creation of a bivariate map, that is, a map that shows the 
