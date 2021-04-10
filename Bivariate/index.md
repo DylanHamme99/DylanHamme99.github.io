@@ -21,4 +21,4 @@ Working with census dats is one of the most common and useful practices in GIS. 
 
 The first step to working with census data is downloading it. This was completed using R using tidyverse and tidycensus. The .Rmd is provided below
 
-<a href="Census Data R Markdown"><img src="Content/Lab_6_Census_R.Rmd"><a/>
+<a href="Content/Lab_6_Census_R.Rmd"><"R MarkDown"><a/>
