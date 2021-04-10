@@ -2,7 +2,7 @@
 ## *Dylan Hamme, 2021*
 <br>
 <br>
-# **Part 1**
+# Part 1:
 <br>
 **Overview:**
 <br>
