@@ -6,13 +6,10 @@
 ## Part 1:
 
 <br>
-
 **Overview:**
 
 <br>
-
 Working with census dats is one of the most common and useful practices in GIS. Here, I take open source data from the ACS to make a visual analysis of the change in the white population as a percent of the total between 2014 and 2019.
-
 <br>
 
 **Downloading Data:**
