@@ -14,7 +14,7 @@
 
 ---
 [Using Census Data to Create an analysis of Population Change Over Time](/Bivariate/index.md)
-<img src="images/change_over_time.jpg?raw=true"/>
+<img src="images/change_over_time.jpg?raw=true"/>(/Bivariate/index.md)
 
 ---
 
