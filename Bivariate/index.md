@@ -24,6 +24,7 @@ The first step to working with census data is downloading it. This was completed
 <a href="Content/Lab_6_Census_R.Rmd">R Markdown<a/>
 <br>
 To quickly explain these steps: 
-*The necessary libraries are called
-*Settings are set for "tidycensus" and api key is provided
-  *
+* The necessary libraries are called
+* Settings are set for "tidycensus" and api key is provided
+* Ideas are listed, and data is downloaded after deciding on analysis
+* 
