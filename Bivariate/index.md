@@ -28,4 +28,8 @@ To quickly explain these steps:
 * Data is written into the correct format
 <br>
 
+**Result**
+
+The data could then directly be put into a spatial form using QGIS and an analysis of the change in the percent white population between 2014 and 2019.
+<a href="Content/change_over_time.jpg"><img src="Content/change_over_time.jpg"><a/>
 
