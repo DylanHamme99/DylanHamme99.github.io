@@ -1,9 +1,12 @@
 # A Comparison of the Change in Percent Population by Race in the United States Over a 5 Year Period
 ## *Dylan Hamme, 2021*
+
 <br>
+
 ## Part 1:
 
 <br>
+
 **Overview:**
 
 <br>
@@ -16,4 +19,4 @@ Working with census dats is one of the most common and useful practices in GIS. 
 
 <br>
 
-The first step to working with census data is downloading it. This was completed using R. 
+The first step to working with census data is downloading it. This was completed using R using tidycensus 
