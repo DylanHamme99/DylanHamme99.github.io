@@ -7,4 +7,4 @@ This lab required downloading data from the American Community Survey (ACS) via 
 <br>
 I was then able to recreate the bivariate map in QGIS and export it as a web map via qgis2web.
   <br>
-<a src="docs/qgis2web_2021_04_29-23_00_00_818393/index.html">Web map<a/>
+<a href="docs/qgis2web_2021_04_29-23_00_00_818393/index.html">Web map<a/>
