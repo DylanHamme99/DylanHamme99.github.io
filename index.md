@@ -17,7 +17,7 @@
 [<img src="images/change_over_time.jpg?raw=true"/>](/Bivariate/index.md/)
 
 ---
-
+[Creating a Bivariate Map and Converting It to a Webmap](/Lab_8/index.md/)
 ### Category Name 2
 
 - [Project 1 Title](http://example.com/)
