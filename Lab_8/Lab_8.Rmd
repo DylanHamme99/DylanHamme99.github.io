@@ -1,0 +1,196 @@
+---
+title: "Lab_8"
+author: "Dylan Hamme"
+date: "4/28/2021"
+output: html_document
+---
+
+```{r setup}
+#download libraries
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "H:/School/GES486/Lab_8")
+library(tidyverse)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+library(sp)
+library(biscale)
+library(cowplot)
+```
+
+```{r}
+#settings for tidycensus
+options(tigris_class = "sf")
+options(tigris_use_cache = TRUE)
+census_api_key("c5a0708efbdc3af4af5d2a3cb2a71dfb3f3c8c03")
+```
+
+```{r Question 1}
+
+Bmore_census_2019 <- get_acs(geography = "tract",
+                            variables = c("total_race" = "B03002_001",
+                                          "white_nh" = "B03002_003",
+                                          "black_nh" = "B03002_004",
+                                          "Med_Income" = "B19013_001" 
+                                          ),
+                            year = 2019,
+                            state = c(24),
+                            county = c(510),
+                            survey = "acs5",
+                            geometry = TRUE, #to download
+                            output = "wide")
+
+head(Bmore_census_2019)
+plot(Bmore_census_2019)
+Bmore_census_2019$percentage_white <- ((Bmore_census_2019$white_nhE)/(Bmore_census_2019$total_raceE)*100)
+
+print(Bmore_census_2019$percentage_white)
+class(Bmore_census_2019$percentage_white)
+
+Bmore_census_omit <- Bmore_census_2019 %>% filter(percentage_white != is.nan(percentage_white))
+
+print(Bmore_census_omit)
+Bmore_census_omit %>% filter(percentage_white == max(percentage_white))
+# The percent white population in this tract is 91.8%
+max_pop <- Bmore_census_omit %>% filter(percentage_white == max(percentage_white))
+
+print(Bmore_census_2019$Med_IncomeE)
+
+Bmore_census_omit <- Bmore_census_2019 %>% filter(Med_IncomeE != "NA")
+Bmore_census_omit %>% filter(Med_IncomeE == max(Med_IncomeE))
+# The highest median income is $195196
+max_income <- Bmore_census_omit %>% filter(Med_IncomeE == max(Med_IncomeE))
+```
+
+```{r QUestion 2}
+Bmore_census_WM <- st_transform(Bmore_census_omit, crs = 3857)
+plot(Bmore_census_WM)
+head(Bmore_census_WM)
+```
+
+```{r Question 3}
+Bmore_census_WM %>% ggplot() + geom_sf(aes(fill = Med_IncomeE)) + theme_bw() + geom_sf(data = max_income, fill = "Red")
+Bmore_census_WM %>% ggplot() + geom_sf(aes(fill = percentage_white)) + theme_bw() + geom_sf(data = max_pop, fill = "Red")
+```
+
+```{r Question 4}
+data <- bi_class(Bmore_census_WM, x = percentage_white, y = Med_IncomeE, style = "quantile", dim = 3)
+#dim refers to the size of the legend, in this case 3x3, just like in Q, style can be quantile, equal, fisher, or jenks.
+
+```
+
+```{r Question 5}
+map <- ggplot() +
+  geom_sf(data = data, mapping = aes(fill = bi_class), color = "white", size = 0.1, show.legend = FALSE) +
+  bi_scale_fill(pal = "DkBlue", dim = 3) +
+  labs(
+    title = "White Populations and Income in Baltimore, MD"
+    
+  ) +
+  bi_theme()
+  
+plot(map)
+```
+
+```{r Question 6}
+#Create a legend to put into the map
+legend <- bi_legend(pal = "DkBlue",
+                    dim = 3,
+                    xlab = "Higher % White",
+                    ylab = "Higher Income",
+                    size = 8)
+print(legend)
+
+ggdraw() + 
+  draw_plot(map, 0,0,1,1) +
+  draw_plot(legend, 0.1, 0.1, .3, .3)
+```
+
+```{r Question 7}
+#Download the data for Hartford County, CT
+Fairfield_county_2019 <- get_acs(geography = "tract",
+                            variables = c("total_race" = "B03002_001",
+                                          "white_nh" = "B03002_003",
+                                          "black_nh" = "B03002_004",
+                                          "Med_Income" = "B19013_001"
+                                          ),
+                            year = 2019,
+                            state = c(09),
+                            county = c(009),
+                            survey = "acs5",
+                            geometry = TRUE, #to download
+                            output = "wide")
+head(Fairfield_county_2019)
+```
+
+```{r}
+# Create Percent White
+Fairfield_county_2019$Perc_black <- ((Fairfield_county_2019$black_nhE/Fairfield_county_2019$total_raceE)*100)
+print(Fairfield_county_2019$Perc_black)
+
+#Filter out Null values and save to new variable
+Fairfield_omit <- Fairfield_county_2019 %>% filter(Perc_black != is.nan(Perc_black))
+print(Fairfield_omit$Perc_black)
+
+#Do the same for median income
+Fairfield_omit <- Fairfield_omit %>% filter(Med_IncomeE != is.nan(Med_IncomeE))
+print(Fairfield_omit$Perc_black)
+print(Fairfield_omit$Med_IncomeE)
+
+#reproject to web mercator
+Fairfield_WM <- st_transform(Fairfield_omit, crs = 3857)
+
+#find max values for each
+max_pb <- Fairfield_omit %>% filter(Perc_black == max(Perc_black))
+max_mi <- Fairfield_omit %>% filter(Med_IncomeE == max(Med_IncomeE))
+
+#plot the maps with each higlighted tract
+Fairfield_WM %>% ggplot() + geom_sf(aes(fill = Med_IncomeE)) + theme_bw() + geom_sf(data = max_mi, fill = "Red")
+Fairfield_WM %>% ggplot() + geom_sf(aes(fill = Perc_black)) + theme_bw() + geom_sf(data = max_pb, fill = "Red")
+```
+```{r}
+#create the Bivariate map now
+CT_data <- bi_class(Fairfield_WM, x = Perc_black, y = Med_IncomeE, style = "quantile", dim = 3)
+
+CT_map <- ggplot() +
+  geom_sf(data = CT_data, mapping = aes(fill = bi_class), color = "white", size = 0.1, show.legend = FALSE) +
+  bi_scale_fill(pal = "Brown", dim = 3) +
+  labs(
+    subtitle = "Black Populations and Income in New Haven County, CT"
+    
+  ) +
+  bi_theme()
+
+plot(CT_map)
+```
+```{r}
+#Now to create the legend
+CT_legend <- bi_legend(pal = "Brown",
+                    dim = 3,
+                    xlab = "Higher % Black",
+                    ylab = "Higher Income",
+                    size = 8)
+print(CT_legend)
+
+ggdraw() + 
+  draw_plot(CT_map, 0,0,1,1) +
+  draw_plot(CT_legend, 0, 0.1, .3, .3)
+```
+
+```{r Question 8}
+#Write the output to a geojson
+#Had to exclude code to knit
+```
+```{r}
+#remake the Bivariate map in QGIS
+```
+
+![As done in QGIS](H:/School/GES486/Lab_8/Screenshot_bivariate_8.png)
+
+
+```{r Reflection}
+# county lookup: #https://www.census.gov/library/reference/code-lists/ansi.html#par_statelist
+# Data lookup: 
+#https://www.socialexplorer.com/data/ACS2019_5yr/metadata/?ds=ACS19_5yr
+```
+
