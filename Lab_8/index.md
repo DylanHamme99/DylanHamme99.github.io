@@ -7,4 +7,4 @@ This lab required downloading data from the American Community Survey (ACS) via 
 <br>
 I was then able to recreate the bivariate map in QGIS and export it as a web map via qgis2web.
   <br>
-<a href="Lab_8/docs/NH_County_Lab_8.html">Web map<a/>
+<a href="/docs/NH_County_Lab_8.html">Web map<a/>
