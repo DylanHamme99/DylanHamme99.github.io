@@ -81,18 +81,34 @@ There was one major shortcoming that I found within my analysis of the elevation
 ***Sources***
  <br>
   Background on dam hazards:
+ <br>
 https://yubanet.com/enviro/old-age-neglect-and-a-changing-climate-are-rendering-us-dams-dangerous/ ,
 <br>
+ <br>
 Dam flow:
   <br>
 http://www.coastalwiki.org/wiki/Dam_break_flow ,
   <br>
 http://www.groundtruthtrekking.org/Issues/OtherIssues/understanding-dam-failure.html ,
 <br>
-Contours: https://cteco.uconn.edu/data/download/flight2016/index.htm ,
+ <br>
+Contours:
+ <br>
+ https://cteco.uconn.edu/data/download/flight2016/index.htm ,
   <br>
+ <br>
 Rivers and streams:
+ <br>
 https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/named-waterbody-polygon?geometry=-73.487%2C41.280%2C-72.965%2C41.460 ,
 <br>
+ <br>
 Stevenson Dam:
   <br>
+ https://en.wikipedia.org/wiki/Stevenson_Dam_Hydroelectric_Plant ,
+ <br>
+ http://www.electronicvalley.org/tour/STEVENsondam.HTM#:~:text=Stevenson%20Dam%20sits%20between%20Lake,its%20length%20is%201213%20feet. ,
+ <br>
+ https://npgallery.nps.gov/GetAsset/ec831ffa-e6fb-491f-85ae-de42ab7b840a , 
+ <br>
+ https://www.loc.gov/item/ct0670/
+ 
