@@ -56,13 +56,19 @@ The steps to create a display are generalized below:
 <br>
 Using the flood data calculated for Segment 3, the percentage of land flooded in each census tract was compared to the median household income of each tract. The steps to doing so are listed below:
 <br>
-		<br>
-* Use the field calculator to find the area of each tract.
-* Use the difference tool to remove the flooded area from each tract.
-* Create a new field that finds the adjusted area of the tract, representing the amount of land untouched by waters.
-* Create a third field that will represent the percent of land flooded in each tract. (100 - ((Adjusted area / total area)*100)).
-* The attribute tables of these shapefiles were then joined with the census shapefile containing the median household income values using the GEOID field.
-* Bivariate maps were then created using the median household income values as well as the percentage of land covered by flood waters.
+<br>
+- Use the field calculator to find the area of each tract.
+- Use the difference tool to remove the flooded area from each tract.
+- Create a new field that finds the adjusted area of the tract, representing the amount of land untouched by waters.
+- Create a third field that will represent the percent of land flooded in each tract. (100 - ((Adjusted area / total area)*100)).
+- The attribute tables of these shapefiles were then joined with the census shapefile containing the median household income values using the GEOID field.
+- Bivariate maps were then created using the median household income values as well as the percentage of land covered by flood waters.
 <br>
 <br>
 <a href="Files/Bivariate.jpg"><img src="Files/Bivariate.jpg"><a/>
+<br>
+<br>
+<br>
+***Discussion***
+<br>
+	
