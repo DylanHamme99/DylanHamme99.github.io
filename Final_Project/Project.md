@@ -19,7 +19,15 @@ The height of flood waters is a function of time after the initial release of wa
 <br>
 <a href="Final_Project/Files/RiverOverview.pdf"><img src="Final_Project/Files/RiverOverview.pdf"><a/>
 <br>
-In order to calculate the height of water at each segment, a series of calculations were made using the estimated amount of water held behind Lake Zoar at any given time. Segment 1: is about 30,000 ft long, and lake zoar holds about (avg. depth is 29 feet with a surface area of 909 acres (3.96 *10^7 sq. ft.)) 1.1484 * 10^9 cb. ft. of water, meaning that the max amount of water height added to the surface would be (segment has an area of 346 acres so 1.1484 * 10^9 / 1.507 *10 ^7 = about 76 ft of additional water. This does not take into account the cross sectional area of the river valley, so height will be adjusted on a relative basis. 
+In order to calculate the height of water at each segment, a series of calculations were made using the estimated amount of water held behind Lake Zoar at any given time.
+	<br>
+	Segment 1: is about 30,000 ft long, and Lake Zoar holds about (avg. depth is 29 feet with a surface area of 909 acres (3.96 *10^7 sq. ft.)) 1.1484 * 10^9 cb. ft. of water, meaning that the max amount of water height added to the surface would be (segment has an area of 346 acres so 1.1484 * 10^9 / 1.507 *10 ^7 = about 76 ft of additional water. This does not take into account the cross sectional area of the river valley, so height will be adjusted on a relative basis. 
+	<br>
 	Segment 2: Because the released water will not move down the river as a singular blob, segment 2 consists of the length of segment 1 and segment 2, which is about 85,000 ft long, and has a total acreage of (346 + 1041 = 1392) which is equivalent to 6.0636 * 10^7 sq. ft. This means the total additional water level would be 19 ft.
+	<br>
 	Segment 3: An additional 25,000 ft of river is left before entering long island sound, this segment has a surface area of 1021 acres (total of 2413 acres or 1.0511 * 10^8 sq. ft.), this is equivalent to an extra 11 ft.
+	<br>
 	In order to take into the account of the parabolic cross sectional area of the river valley, these estimates will be cut in half to make a more sound estimate of water elevation at each section of the river with respect to time. At the end of segment 1, the water level will be at 38 ft higher than the initial water level, at the end of segment 2, the water is about 9ft higher than the initial level, and as the river reaches long island sound, the water level is about 5ft higher than the initial water level. 
+<br>
+<br>
+<br>
