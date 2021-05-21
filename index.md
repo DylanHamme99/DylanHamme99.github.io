@@ -12,7 +12,7 @@
 [A Representation of the Effects of Total Failure of the Stevenson Dam](/Final_Project/Project.md/)
 <br>
 <br>
-[<img src="Final_project/Files/RiverOverview.jpg"/>](/Final_Project/Project.md/)
+[<img src="images/RiverOverview.jpg?raw=true"/>](/Final_Project/Project.md/)
 
 
 [What Are the Dangers Of Powerplants and Whom Do They Affect?](/Project1_486/Project.md/)
