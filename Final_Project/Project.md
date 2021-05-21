@@ -47,6 +47,9 @@ The steps to create a display are generalized below:
 - Use the extraction tool to select the contours of the valley. Use the select by attribute function to select only the contours of the appropriate calculated water level. To make this into a polygon, only the maximum elevation contours were selected, then the polygonize function was used after editing the contours to make an enclosed shape that represents the land covered by flood waters.
 - Download ACS data on Fairfield and New Haven Counties for median household income.
 - Use the extract tool to find which tracts will be affected by the flood waters.
+<br>
+	<a href="Files/FloodPattern.gif"><img src="Files/FloodPattern.gif"><a/>
+
 - Use the field calculator to find the area of each tract.
 - Use the difference tool to remove the flooded area from each tract.
 - Create a new field that finds the adjusted area of the tract, representing the amount of land untouched by waters.
