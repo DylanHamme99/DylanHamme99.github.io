@@ -56,6 +56,7 @@ The steps to create a display are generalized below:
 <br>
 Using the flood data calculated for Segment 3, the percentage of land flooded in each census tract was compared to the median household income of each tract. The steps to doing so are listed below:
 <br>
+		<br>
 * Use the field calculator to find the area of each tract.
 * Use the difference tool to remove the flooded area from each tract.
 * Create a new field that finds the adjusted area of the tract, representing the amount of land untouched by waters.
