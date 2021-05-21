@@ -22,17 +22,17 @@ The height of flood waters is a function of time after the initial release of wa
 <br>
 <br>
 In order to calculate the height of water at each segment, a series of calculations were made using the estimated amount of water held behind Lake Zoar at any given time.
-	<br>
-	<br>
+<br>
+<br>
 	Segment 1: This segment is about 30,000 ft long, and Lake Zoar holds about (avg. depth is 29 feet with a surface area of 909 acres (3.96 *10^7 sq. ft.)) 1.1484 * 10^9 cb. ft. of water, meaning that the max amount of water height added to the surface would be (segment has an area of 346 acres so 1.1484 * 10^9 cb. ft./ 1.507 *10 ^7 sq. ft.) about 76 ft of additional water. This does not take into account the cross sectional area of the river valley, so height will be adjusted on a relative basis. 
-	<br>
-	<br>
+<br>
+<br>
 	Segment 2: Because the released water will not move down the river as a singular blob, segment 2 consists of the length of segment 1 and segment 2, which is about 85,000 ft long, and has a total acreage of (346 + 1041 = 1392) which is equivalent to 6.0636 * 10^7 sq. ft. This means the total additional water level would be 19 ft.
-	<br>
-	<br>
+<br>
+<br>
 	Segment 3: An additional 25,000 ft of river is left before entering long island sound, this segment has a surface area of 1021 acres (total of 2413 acres or 1.0511 * 10^8 sq. ft.), this is equivalent to an extra 11 ft.
-	<br>
-	<br>
+<br>
+<br>
 	In order to take into the account of the parabolic cross sectional area of the river valley, these estimates will be cut in half to make a more sound estimate of water elevation at each section of the river with respect to time. At the end of segment 1, the water level will be at 38 ft higher than the initial water level, at the end of segment 2, the water is about 9ft higher than the initial level, and as the river reaches long island sound, the water level is about 5ft higher than the initial water level. 
 <br>
 <br>
@@ -42,14 +42,19 @@ In order to calculate the height of water at each segment, a series of calculati
 The next part of the analysis is the visual aspect. This begins with some data taken from open source websites (listed at the bottom of this page). These include a shapefile of one foot contours of the Lower Housatonic Valley, a shapefile of the current water levels of the river, a shapefile of the census tracts of Fairfield County and New Haven County that include data for the median household income of each tract, and a shapefile of the state of Connecticut.
 <br>
 The steps to create a display are generalized below:
-	<br>
+<br>
 - Create a buffer around the river that encapsulates the contours that may be affected by flooding (10000 ft).
 - Use the extraction tool to select the contours of the valley. Use the select by attribute function to select only the contours of the appropriate calculated water level. To make this into a polygon, only the maximum elevation contours were selected, then the polygonize function was used after editing the contours to make an enclosed shape that represents the land covered by flood waters.
 - Download ACS data on Fairfield and New Haven Counties for median household income.
 - Use the extract tool to find which tracts will be affected by the flood waters.
 <br>
 	<a href="Files/FloodPattern.gif"><img src="Files/FloodPattern.gif"><a/>
-
+<br>
+<br>
+<br>
+***Comparing Flooded Area to Demographics***
+<br>
+Using the flood data calculated for Segment 3, 
 - Use the field calculator to find the area of each tract.
 - Use the difference tool to remove the flooded area from each tract.
 - Create a new field that finds the adjusted area of the tract, representing the amount of land untouched by waters.
