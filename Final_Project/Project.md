@@ -31,7 +31,7 @@ Segment 1: This segment is about 30,000 ft long, and Lake Zoar holds about (avg.
 Segment 2: Because the released water will not move down the river as a singular blob, segment 2 consists of the length of segment 1 and segment 2, which is about 85,000 ft long, and has a total acreage of (346 + 1041 = 1392) which is equivalent to 6.0636 x 10^7 sq. ft. This means the total additional water level would be 19 ft.
 <br>
 <br>
-Segment 3: An additional 25,000 ft of river is left before entering long island sound, this segment has a surface area of 1021 acres (total of 2413 acres or 1.0511 x 10^8 sq. ft.), this is equivalent to an extra 11 ft.
+Segment 3: An additional 25,000 ft of river is left before entering long island sound, this segment has a surface area of 1021 acres (total of 2413 acres or 1.0511 x 10^8 sq. ft.), this is equivalent to an extra 11 ft of water.
 <br>
 <br>
 In order to take into the account of the parabolic cross sectional area of the river valley, these estimates will be cut in half to make a more sound estimate of water elevation at each section of the river with respect to time. At the end of segment 1, the water level will be at 38 ft higher than the initial water level, at the end of segment 2, the water is about 9ft higher than the initial level, and as the river reaches long island sound, the water level is about 5ft higher than the initial water level. 
@@ -61,7 +61,7 @@ Using the flood data calculated for Segment 3, the percentage of land flooded in
 - Use the field calculator to find the area of each tract.
 - Use the difference tool to remove the flooded area from each tract.
 - Create a new field that finds the adjusted area of the tract, representing the amount of land untouched by waters.
-- Create a third field that will represent the percent of land flooded in each tract. (100 - ((Adjusted area / total area)*100)).
+- Create a third field that will represent the percent of land flooded in each tract. (100 - ((Adjusted area / total area)x100)).
 - The attribute tables of these shapefiles were then joined with the census shapefile containing the median household income values using the GEOID field.
 - Bivariate maps were then created using the median household income values as well as the percentage of land covered by flood waters.
 <br>
@@ -75,3 +75,24 @@ Using the flood data calculated for Segment 3, the percentage of land flooded in
 The topography following the Housatonuic River as it empties into Long Island Sound reveals that there is a much higher risk of flooding nearer the shoreline as the slopes become gentler and the elvation more constant. This explains the potential fanning out of the flood waters as they approach the mouth of the river. An interesting detail that comes to light is that te flood waters are more likely to move to the West at the mouth of the river than they are to the East, which tends to be a bit higher in elevation. This follows the pattern of higher income neighborhoods being found to the East of the Housatonic along the Connecticut shoreline, and lower income neighborhoods to the West of the mouth of the river the wtaers approach Bridgeport. 
 <br>
 There was one major shortcoming that I found within my analysis of the elevation of flood waters. Since I used contours to calculate elvation levels along the river, the maximum elvation of floodwaters was flound by selecting a single elevation at which waters would reach. This method is flawed as the elevation of the river itself moves from Lake Zoar (99 ft) to Long Island Sound (Sea Level). This caused an exageration in the height of flood waters, especially as they moved closer to sea level. Perhaps truning the contours into a raster dataset would allow me to add a constant value to each cell of elevation, which would create a more accurate representation of the potential levels that flood waters may reach. Because of my rough estimate of flood elevation based on volume of water flowing down the valley, my model is much less accurate than it could have been if I could make a 3d model of the cross section of the river bed. This is a very important method in improving my model.
+<br>
+<br>
+<br>
+***Sources***
+ <br>
+  Background on dam hazards:
+https://yubanet.com/enviro/old-age-neglect-and-a-changing-climate-are-rendering-us-dams-dangerous/ ,
+<br>
+Dam flow:
+  <br>
+http://www.coastalwiki.org/wiki/Dam_break_flow ,
+  <br>
+http://www.groundtruthtrekking.org/Issues/OtherIssues/understanding-dam-failure.html ,
+<br>
+Contours: https://cteco.uconn.edu/data/download/flight2016/index.htm ,
+  <br>
+Rivers and streams:
+https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/named-waterbody-polygon?geometry=-73.487%2C41.280%2C-72.965%2C41.460 ,
+<br>
+Stevenson Dam:
+  <br>
