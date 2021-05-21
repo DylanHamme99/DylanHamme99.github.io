@@ -39,3 +39,8 @@ In order to calculate the height of water at each segment, a series of calculati
 <br>
 ***Turning Numbers into a Display:***
 <br>
+The next part of the analysis is the visual aspect. This begins with some data taken from open source websites (listed at the bottom of this page). These include a shapefile of one foot contours of the Lower Housatonic Valley, a shapefile of the current water levels of the river, a shapefile of the census tracts of Fairfield County and New Haven County that include data for the median household income of each tract, and a shapefile of the state of Connecticut.
+<br>
+The steps to create a display are generalized below:
+	<br>
+*Create a buffer around the river that encapsulates the contours that may be affected by flooding (10000 ft)
