@@ -11,4 +11,10 @@ With the frequency and intensity of summer storms increasing due to a rise in gl
 <br>
 This is a display of a the simulated effects on the Lower Housatonic Valley after a theoretical total failure of the Stevenson Dam on the Housatonic River. The Dam creates Lake Zoar, a Lake with 27 Miles of shoreline. An analysis of the effects of dam failure include calculating the maximum water levels downriver after the event, and looking at the statistics of what demographics will be effected and where.
 <br>
-
+<br>
+<br>
+***Calculations:***
+<br>
+The height of flood waters is a function of time after the initial release of water. To simulate this, the Lower Housatonic River was broken into three segments as to show what the height of the water may be as the flood waters reach each "checkpoint", or the end of each segment. These segments are labeled simply as "Segment 1", "Segment 2", and "Segment 3". The segments were simply chosen using the segmentation of the river according the the shapefile used as the representation. 
+<br>
+<a href="files/RiverOverview.pdf"><img src="files/RiverOverview.pdf"><a/>
