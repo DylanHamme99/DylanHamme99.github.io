@@ -17,6 +17,7 @@ This is a display of a the simulated effects on the Lower Housatonic Valley afte
 <br>
 The height of flood waters is a function of time after the initial release of water. To simulate this, the Lower Housatonic River was broken into three segments as to show what the height of the water may be as the flood waters reach each "checkpoint", or the end of each segment. These segments are labeled simply as "Segment 1", "Segment 2", and "Segment 3". The segments were simply chosen using the segmentation of the river according the the shapefile used as the representation. 
 <br>
+<br>
 <a href="Files/RiverOverview.jpg"><img src="Files/RiverOverview.jpg"><a/>
 <br>
 <br>
@@ -43,16 +44,16 @@ The next part of the analysis is the visual aspect. This begins with some data t
 <br>
 The steps to create a display are generalized below:
 <br>
-- Create a buffer around the river that encapsulates the contours that may be affected by flooding (10000 ft).
+- Create a buffer around the river that encapsulates the contours that may be affected by flooding (10,000 ft).
 - Use the extraction tool to select the contours of the valley. Use the select by attribute function to select only the contours of the appropriate calculated water level. To make this into a polygon, only the maximum elevation contours were selected, then the polygonize function was used after editing the contours to make an enclosed shape that represents the land covered by flood waters.
 - Download ACS data on Fairfield and New Haven Counties for median household income.
 - Use the extract tool to find which tracts will be affected by the flood waters.
 <br>
-	<a href="Files/FloodPattern.gif"><img src="Files/FloodPattern.gif"><a/>
+<a href="Files/FloodPattern.gif"><img src="Files/FloodPattern.gif"><a/>
 <br>
 <br>
 <br>
-***Comparing Flooded Area to Demographics***
+***Comparing Flooded Area to Demographics:***
 <br>
 Using the flood data calculated for Segment 3, the percentage of land flooded in each census tract was compared to the median household income of each tract. The steps to doing so are listed below:
 <br>
@@ -69,6 +70,8 @@ Using the flood data calculated for Segment 3, the percentage of land flooded in
 <br>
 <br>
 <br>
-***Discussion***
+***Discussion:***
 <br>
-	
+The topography following the Housatonuic River as it empties into Long Island Sound reveals that there is a much higher risk of flooding nearer the shoreline as the slopes become gentler and the elvation more constant. This explains the potential fanning out of the flood waters as they approach the mouth of the river. An interesting detail that comes to light is that te flood waters are more likely to move to the West at the mouth of the river than they are to the East, which tends to be a bit higher in elevation. This follows the pattern of higher income neighborhoods being found to the East of the Housatonic along the Connecticut shoreline, and lower income neighborhoods to the West of the mouth of the river the wtaers approach Bridgeport. 
+	<br>
+There was one major shortcoming that I found within my analysis of the elevation of flood waters. Since I used contours to calculate elvation levels along the river, the maximum elvation of floodwaters was flound by selecting a single elevation at which waters would reach. This method is flawed as the elevation of the river itself moves from Lake Zoar (99 ft) to Long Island Sound (Sea Level). This caused an exageration in the height of flood waters, especially as they moved closer to sea level. Perhaps truning the contours into a raster dataset would allow me to add a constant value to each cell of elevation, which would create a more accurate representation of the potential levels that flood waters may reach. Because of my rough estimate of flood elevation based on volume of water flowing down the valley, my model is much less accurate than it could have been if I could make a 3d model of the cross section of the river bed. This is a very important method in improving my model.
