@@ -17,7 +17,7 @@ This is a display of a the simulated effects on the Lower Housatonic Valley afte
 <br>
 The height of flood waters is a function of time after the initial release of water. To simulate this, the Lower Housatonic River was broken into three segments as to show what the height of the water may be as the flood waters reach each "checkpoint", or the end of each segment. These segments are labeled simply as "Segment 1", "Segment 2", and "Segment 3". The segments were simply chosen using the segmentation of the river according the the shapefile used as the representation. 
 <br>
-<a href="Final_Project/Files/RiverOverview.pdf"><img src="Final_Project/Files/RiverOverview.pdf"><a/>
+<a href="Files/RiverOverview.pdf"><img src="Files/RiverOverview.pdf"><a/>
 <br>
 In order to calculate the height of water at each segment, a series of calculations were made using the estimated amount of water held behind Lake Zoar at any given time.
 	<br>
