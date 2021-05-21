@@ -19,6 +19,8 @@ The height of flood waters is a function of time after the initial release of wa
 <br>
 <a href="Files/RiverOverview.pdf"><img src="Files/RiverOverview.pdf"><a/>
 <br>
+<br>
+<br>
 In order to calculate the height of water at each segment, a series of calculations were made using the estimated amount of water held behind Lake Zoar at any given time.
 	<br>
 	<br>
